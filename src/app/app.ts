@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
+import { GlucoseDashboard } from './glucose-dashboard/glucose-dashboard';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  template: `<h1>Glucose Remote Running</h1>`,
+  imports: [GlucoseDashboard],
+  template: `
+    <app-glucose-dashboard></app-glucose-dashboard>
+  `,
 })
 export class App {}

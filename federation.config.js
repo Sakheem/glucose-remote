@@ -1,7 +1,7 @@
 const { withNativeFederation, shareAll } = require('@angular-architects/native-federation/config');
 
 module.exports = withNativeFederation({
-  name: 'glucose-remote',
+  name: 'glucose',
 
   exposes: {
   './Component': './src/app/glucose-dashboard/glucose-dashboard.ts',

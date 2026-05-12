@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-glucose-dashboard',
   standalone: true,
   templateUrl: './glucose-dashboard.html',
-  styleUrl: './glucose-dashboard.css',
+  styleUrls: ['./glucose-dashboard.css'],
 })
 export class GlucoseDashboard {
   readings: { glucose: number; date: string; time: string; status: string }[] = [];
