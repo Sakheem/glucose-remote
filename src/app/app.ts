@@ -1,11 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  template: `<h1>Glucose Remote Running</h1>`,
 })
-export class App {
-  protected readonly title = signal('glucose-remote');
-}
+export class App {}
